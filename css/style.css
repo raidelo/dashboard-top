@@ -5,7 +5,7 @@
 
 :root {
   font-family: Roboto, system-ui;
-  --sidebar-separation: 35px;
+  --sidebar-separation: 30px;
 }
 
 body {
@@ -35,14 +35,20 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  row-gap: 10px;
 }
 
 ul > li {
-  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  place-items: center;
 }
 
-ul > li:last-child {
-  margin-bottom: 0;
+ul > li > span {
+  justify-self: start;
 }
 
 ul > li:first-child {
