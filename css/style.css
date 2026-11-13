@@ -11,17 +11,21 @@
 body {
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 15vw 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "sidebar header" "sidebar content";
+  min-height: 100vh;
 }
 
 /* Sidebar */
 
 #sidebar {
-  max-width: 15vw;
-  height: 100vh;
   background-color: #09f;
   color: white;
   font-weight: bold;
   padding: 10px 0 0 20px;
+  grid-area: sidebar;
 }
 
 #sidebar img {
@@ -64,4 +68,21 @@ ul > li:first-child {
 
 ul > li:nth-last-child(4) {
   margin-bottom: var(--sidebar-separation);
+}
+
+/* Header */
+
+header {
+  grid-area: header;
+}
+
+header img {
+  width: 1em;
+  height: 1em;
+}
+
+/* Main content */
+
+main {
+  grid-area: content;
 }
