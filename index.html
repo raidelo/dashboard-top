@@ -53,23 +53,27 @@
     </div>
 
     <header>
-      <div>
-        <img src="./static/search.svg" alt="Search" />
+      <div id="search-sect">
+        <img src="./static/search.svg" alt="Search" class="icon" />
         <input type="input" name="search" value="" />
-        <img src="./static/bell.svg" alt="Notifications" />
+        <img src="./static/bell.svg" alt="Notifications" class="icon" />
 
         <img src="./static/totoro.jpg" alt="" class="user-logo small" />
-        <span id="username small">Test Name</span>
+        <span>Test Name</span>
       </div>
-      <div>
-        <img src="./static/totoro.jpg" alt="" class="user-logo big" />
-        <div>
-          <p>Hi there,</p>
-          <p class="username big">Test Name (@testnick)</p>
+      <div id="info-sect">
+        <div id="user-info">
+          <img src="./static/totoro.jpg" alt="" class="user-logo big" />
+          <div>
+            <p>Hi there,</p>
+            <p>Test Name (@testnick)</p>
+          </div>
         </div>
-        <button class="header-button" type="button">New</button>
-        <button class="header-button" type="button">Upload</button>
-        <button class="header-button" type="button">Share</button>
+        <div>
+          <button class="header-button" type="button">New</button>
+          <button class="header-button" type="button">Upload</button>
+          <button class="header-button" type="button">Share</button>
+        </div>
       </div>
     </header>
 

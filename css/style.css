@@ -6,6 +6,16 @@
 :root {
   font-family: Roboto, system-ui;
   --sidebar-separation: 30px;
+  --main-theme: #09f;
+}
+
+img {
+  display: inline;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -21,7 +31,7 @@ body {
 /* Sidebar */
 
 #sidebar {
-  background-color: #09f;
+  background-color: var(--main-theme);
   color: white;
   font-weight: bold;
   padding: 10px 0 0 20px;
@@ -73,12 +83,85 @@ ul > li:nth-last-child(4) {
 /* Header */
 
 header {
+  padding: 15px 25px;
   grid-area: header;
+  font-weight: bold;
 }
 
-header img {
-  width: 1em;
-  height: 1em;
+#search-sect,
+#info-sect {
+  display: flex;
+}
+
+#search-sect {
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#search-sect > input {
+  flex: 1;
+  background-color: hsl(0, 0%, 82%);
+  border: none;
+  border-radius: 999px;
+  height: 18px;
+  margin-right: 35px;
+}
+
+#info-sect {
+  justify-content: space-between;
+}
+
+#info-sect button {
+  background-color: var(--main-theme);
+  border: none;
+  border-radius: 999px;
+  color: white;
+  padding: 6px;
+  width: 4.5rem;
+}
+
+#info-sect > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#user-info > div > p:first-child {
+  font-size: 0.8em;
+}
+
+#user-info > div > p:last-child {
+  font-size: 1em;
+}
+
+#user-info > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Icons */
+
+.user-logo {
+  border-radius: 999px;
+}
+
+.small {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.big {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 /* Main content */
