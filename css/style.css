@@ -15,6 +15,9 @@ img {
   display: inline;
 }
 
+h2,
+h3,
+h4,
 p {
   padding: 0;
   margin: 0;
@@ -177,12 +180,31 @@ main {
   grid-template-areas:
     "projects announcements"
     "projects trending";
-  padding: 10px 30px 40px 20px;
+  padding: 20px 30px 40px 20px;
   gap: var(--column-gap);
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px hsl(0, 0%, 70%);
+}
+
+.project-body > h3,
+.announcement > h4 {
+  margin-bottom: 6px;
+}
+
+.project-body > p,
+.announcement > p,
+.profile-info > p:last-child {
+  color: gray;
 }
 
 h2 {
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 /** Projects **/
@@ -196,13 +218,6 @@ h2 {
   grid-template-columns: 1fr 1fr;
   column-gap: var(--column-gap);
   row-gap: var(--row-gap);
-}
-
-.card {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 2px 2px 8px hsl(0, 0%, 70%);
 }
 
 .project {
@@ -252,8 +267,4 @@ h2 {
 
 .profile-info {
   font-size: 0.8rem;
-}
-
-.profile-info > p:last-child {
-  color: gray;
 }
