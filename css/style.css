@@ -168,4 +168,6 @@ header {
 
 main {
   grid-area: content;
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0 2px 8px hsl(0, 0%, 70%) inset;
 }
