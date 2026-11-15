@@ -7,6 +7,8 @@
   font-family: Roboto, system-ui;
   --sidebar-separation: 30px;
   --main-theme: #09f;
+  --row-gap: 25px;
+  --column-gap: 20px;
 }
 
 img {
@@ -170,4 +172,62 @@ main {
   grid-area: content;
   background-color: hsl(0, 0%, 90%);
   box-shadow: 0 2px 8px hsl(0, 0%, 70%) inset;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  padding: 10px 30px 40px 20px;
+  gap: var(--column-gap);
+}
+
+/** Projects **/
+
+#projects {
+  grid-area: projects;
+}
+
+#projects > h2 {
+  font-size: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--column-gap);
+  row-gap: var(--row-gap);
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 15px 30px 20px;
+  border-left: 8px solid orange;
+  box-shadow: 2px 2px 8px hsl(0, 0%, 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.card-body {
+  font-size: 0.8rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+/** Announcements **/
+
+#announcements {
+  grid-area: announcements;
+}
+
+/** Trending **/
+
+#trending {
+  grid-area: trending;
 }
