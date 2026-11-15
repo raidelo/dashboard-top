@@ -201,7 +201,7 @@ h2 {
 .card {
   background-color: white;
   border-radius: 8px;
-  padding: 10px 15px 30px 20px;
+  padding: 20px;
   box-shadow: 2px 2px 8px hsl(0, 0%, 70%);
 }
 
@@ -237,4 +237,23 @@ h2 {
 
 #trending {
   grid-area: trending;
+}
+
+#trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-info {
+  font-size: 0.8rem;
+}
+
+.profile-info > p:last-child {
+  color: gray;
 }
