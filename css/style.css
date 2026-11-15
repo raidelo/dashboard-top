@@ -229,6 +229,10 @@ h2 {
   grid-area: announcements;
 }
 
+.announcement {
+  font-size: 0.7rem;
+}
+
 /** Trending **/
 
 #trending {
