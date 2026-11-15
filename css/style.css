@@ -181,14 +181,14 @@ main {
   gap: var(--column-gap);
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 /** Projects **/
 
 #projects {
   grid-area: projects;
-}
-
-#projects > h2 {
-  font-size: 1rem;
 }
 
 .cards {
