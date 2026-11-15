@@ -242,10 +242,21 @@ h2 {
 
 #announcements {
   grid-area: announcements;
+  margin-bottom: 20px;
+}
+
+#announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .announcement {
   font-size: 0.7rem;
+}
+
+.announcement-separator {
+  border: 0.5px solid hsl(0, 0%, 80%);
 }
 
 /** Trending **/
