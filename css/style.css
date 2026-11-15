@@ -213,11 +213,11 @@ h2 {
   gap: 25px;
 }
 
-.card-body {
+.project-body {
   font-size: 0.8rem;
 }
 
-.card-actions {
+.project-actions {
   display: flex;
   justify-content: flex-end;
   gap: 14px;
